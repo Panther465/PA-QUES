@@ -1,0 +1,28 @@
+package tree;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PreorderTraversalLC144 {
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int val) {
+            this.val = val;
+        }
+    }
+
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        helper(root, res);
+        return res;
+    }
+
+    private void helper(TreeNode root, List<Integer> res) {
+        if (root == null) return;
+        res.add(root.val);
+        helper(root.left, res);
+        helper(root.right, res);
+    }
+}

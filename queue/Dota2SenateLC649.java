@@ -18,7 +18,6 @@ public class Dota2SenateLC649 {
         while (!radiant.isEmpty() && !dire.isEmpty()) {
             int r = radiant.poll();
             int d = dire.poll();
-            // whoever comes first bans the other and goes to next round
             if (r < d) radiant.add(r + n);
             else dire.add(d + n);
         }

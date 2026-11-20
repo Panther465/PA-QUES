@@ -5,7 +5,6 @@ import java.util.PriorityQueue;
 public class KthLargestLC215 {
 
     public static int findKthLargest(int[] nums, int k) {
-        // keep only k largest, top of min heap is the answer
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         for (int x : nums) {
             pq.add(x);

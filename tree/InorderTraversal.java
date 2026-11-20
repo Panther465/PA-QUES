@@ -9,7 +9,6 @@ public class InorderTraversal {
         }
     }
 
-    // left -> root -> right
     static void inorder(Node root) {
         if (root == null) return;
         inorder(root.left);

@@ -8,7 +8,6 @@ public class SurroundedRegionsLC130 {
         int m = board.length;
         int n = board[0].length;
 
-        // any O connected to the border can not be captured, mark them as #
         for (int i = 0; i < m; i++) {
             dfs(board, i, 0);
             dfs(board, i, n - 1);

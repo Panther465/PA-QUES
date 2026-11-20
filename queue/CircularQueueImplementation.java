@@ -78,7 +78,6 @@ public class CircularQueueImplementation {
         System.out.println("Dequeued: " + q.dequeue());
         System.out.println("Dequeued: " + q.dequeue());
 
-        // these go to the start of the array now
         q.enqueue(60);
         q.enqueue(70);
         q.display();

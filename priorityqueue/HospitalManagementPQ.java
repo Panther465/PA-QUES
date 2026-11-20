@@ -16,7 +16,6 @@ public class HospitalManagementPQ {
     }
 
     public static void main(String[] args) {
-        // higher severity first, if same then whoever came first
         PriorityQueue<Patient> pq = new PriorityQueue<>((a, b) -> {
             if (a.severity != b.severity) return b.severity - a.severity;
             return a.arrival - b.arrival;

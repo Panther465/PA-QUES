@@ -10,7 +10,6 @@ public class RevealCardsLC950 {
         int n = deck.length;
         Arrays.sort(deck);
 
-        // queue of positions in the order they will be revealed
         Queue<Integer> q = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             q.add(i);

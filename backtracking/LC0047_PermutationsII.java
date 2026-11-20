@@ -20,7 +20,6 @@ public class LC0047_PermutationsII {
 
         for (int i = 0; i < nums.length; i++) {
             if (used[i]) continue;
-            // skip duplicate if same value before it is not used yet
             if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) continue;
 
             used[i] = true;

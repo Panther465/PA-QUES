@@ -1,7 +1,5 @@
 package queueassessment;
 
-// Fixed size circular buffer. When it is full, adding overwrites the oldest value.
-// rotate(k) moves the first k elements to the back.
 public class Q2_CircularBufferRotation {
     int[] buf;
     int front = 0;
@@ -15,7 +13,6 @@ public class Q2_CircularBufferRotation {
 
     void add(int val) {
         if (size == cap) {
-            // overwrite oldest
             buf[front] = val;
             front = (front + 1) % cap;
             return;

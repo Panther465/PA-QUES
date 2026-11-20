@@ -20,7 +20,6 @@ public class NumberOfIslandsLC200 {
                 Queue<int[]> q = new LinkedList<>();
                 q.add(new int[]{i, j});
 
-                // bfs and sink the whole island
                 while (!q.isEmpty()) {
                     int[] cell = q.poll();
                     for (int[] d : dirs) {

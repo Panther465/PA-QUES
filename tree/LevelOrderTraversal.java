@@ -12,7 +12,6 @@ public class LevelOrderTraversal {
         }
     }
 
-    // prints each level on a new line
     static void levelOrder(Node root) {
         if (root == null) return;
 

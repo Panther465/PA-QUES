@@ -17,7 +17,6 @@ public class TaskSchedulerLC621 {
             if (f > 0) pq.add(f);
         }
 
-        // {remaining count, time when it can run again}
         Queue<int[]> cooldown = new LinkedList<>();
         int time = 0;
 

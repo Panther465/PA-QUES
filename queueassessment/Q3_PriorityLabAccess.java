@@ -2,12 +2,10 @@ package queueassessment;
 
 import java.util.PriorityQueue;
 
-// Students request the lab. Exam work gets the lab first, then project work,
-// then normal practice. Same priority -> earlier request goes first.
 public class Q3_PriorityLabAccess {
     static class Request {
         String student;
-        int priority;   // 1 = exam, 2 = project, 3 = practice
+        int priority;
         int time;
 
         Request(String student, int priority, int time) {

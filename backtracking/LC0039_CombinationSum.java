@@ -18,7 +18,6 @@ public class LC0039_CombinationSum {
         for (int i = start; i < candidates.length; i++) {
             if (candidates[i] > remain) continue;
             curr.add(candidates[i]);
-            // same number can be used again so pass i not i+1
             backtrack(candidates, remain - candidates[i], i, curr, res);
             curr.remove(curr.size() - 1);
         }

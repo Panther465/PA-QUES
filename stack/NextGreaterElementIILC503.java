@@ -9,7 +9,6 @@ public class NextGreaterElementIILC503 {
         int[] ans=new int[n];
         Arrays.fill(ans,-1);
         Stack<Integer> st=new Stack<>();
-        // go around twice so the circular part is covered
         for(int i=0;i<2*n;i++){
             int curr=nums[i%n];
             while(!st.isEmpty() && nums[st.peek()]<curr){

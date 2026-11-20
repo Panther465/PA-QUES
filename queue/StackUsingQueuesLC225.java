@@ -12,7 +12,6 @@ class StackUsingQueuesLC225 {
 
     public void push(int x) {
         q.add(x);
-        // rotate so newest element comes to the front
         for (int i = 0; i < q.size() - 1; i++) {
             q.add(q.poll());
         }

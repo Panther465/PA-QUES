@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-// Max of every window of size k using a monotonic deque
-// (deque keeps indexes, values in decreasing order from front to back)
 public class Q6_SlidingWindowMaxDeque {
 
     static List<Integer> windowMax(int[] arr, int k) {

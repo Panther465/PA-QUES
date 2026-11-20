@@ -5,8 +5,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-// Service desk gives a token to every customer who joins. Some customers cancel
-// before their turn. serve() should give the next customer who is still waiting.
 public class Q1_ServiceDeskQueue {
     Queue<Integer> q = new LinkedList<>();
     Set<Integer> waiting = new HashSet<>();
@@ -28,7 +26,6 @@ public class Q1_ServiceDeskQueue {
     }
 
     int serve() {
-        // skip tokens that were cancelled
         while (!q.isEmpty() && cancelled.contains(q.peek())) {
             cancelled.remove(q.poll());
         }

@@ -9,7 +9,6 @@ public class PreorderTraversal {
         }
     }
 
-    // root -> left -> right
     static void preorder(Node root) {
         if (root == null) return;
         System.out.print(root.data + " ");

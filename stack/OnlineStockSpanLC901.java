@@ -2,7 +2,6 @@ package stack;
 import java.util.Stack;
 class OnlineStockSpanLC901 {
 
-    // {price, span}
     Stack<int[]> st;
 
     public OnlineStockSpanLC901() {
@@ -18,9 +17,3 @@ class OnlineStockSpanLC901 {
         return span;
     }
 }
-
-/**
- * Your StockSpanner object will be instantiated and called as such:
- * StockSpanner obj = new StockSpanner();
- * int param_1 = obj.next(price);
- */

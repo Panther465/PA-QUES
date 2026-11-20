@@ -16,7 +16,6 @@ public class InorderIterative {
         Node curr = root;
 
         while (curr != null || !st.isEmpty()) {
-            // go as left as possible
             while (curr != null) {
                 st.push(curr);
                 curr = curr.left;

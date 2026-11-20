@@ -12,7 +12,6 @@ public class CompleteBinaryTree {
         }
     }
 
-    // in level order, once we see a null there should be no node after it
     static boolean isComplete(Node root) {
         if (root == null) return true;
 

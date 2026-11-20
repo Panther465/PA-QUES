@@ -12,7 +12,6 @@ public class HeightOfBinaryTree {
         }
     }
 
-    // count levels using level order
     static int height(Node root) {
         if (root == null) return 0;
 

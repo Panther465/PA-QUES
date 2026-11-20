@@ -4,14 +4,13 @@ import java.util.Stack;
 
 public class Q5_QueueUsingTwoStacks {
     static class MyQueue {
-        Stack<Integer> s1 = new Stack<>();   // for enqueue
-        Stack<Integer> s2 = new Stack<>();   // for dequeue
+        Stack<Integer> s1 = new Stack<>();
+        Stack<Integer> s2 = new Stack<>();
 
         void enqueue(int x) {
             s1.push(x);
         }
 
-        // move only when s2 is empty, so order stays correct
         void shift() {
             if (s2.isEmpty()) {
                 while (!s1.isEmpty()) {

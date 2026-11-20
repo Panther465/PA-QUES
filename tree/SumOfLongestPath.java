@@ -1,7 +1,5 @@
 package tree;
 
-// sum of nodes on the longest root to leaf path
-// if two paths have same length take the bigger sum
 public class SumOfLongestPath {
     static class Node {
         int data;

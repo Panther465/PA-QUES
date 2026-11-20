@@ -13,7 +13,6 @@ public class StudentsUnableToEatLunchLC1700 {
 
         int top = 0;
         int rotations = 0;
-        // if everyone in queue has gone around once without eating, stop
         while (!q.isEmpty() && rotations < q.size()) {
             if (q.peek() == sandwiches[top]) {
                 q.poll();

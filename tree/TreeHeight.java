@@ -9,7 +9,6 @@ public class TreeHeight {
         }
     }
 
-    // height = number of nodes on the longest root to leaf path
     static int height(Node root) {
         if (root == null) return 0;
         int lh = height(root.left);

@@ -9,7 +9,6 @@ public class PostorderTraversal {
         }
     }
 
-    // left -> right -> root
     static void postorder(Node root) {
         if (root == null) return;
         postorder(root.left);

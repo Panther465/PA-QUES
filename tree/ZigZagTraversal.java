@@ -11,7 +11,6 @@ public class ZigZagTraversal {
         }
     }
 
-    // two stacks, one for left->right level and one for right->left level
     static void zigZag(Node root) {
         if (root == null) return;
 

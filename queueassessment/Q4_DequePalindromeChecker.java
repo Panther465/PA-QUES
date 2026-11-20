@@ -3,7 +3,6 @@ package queueassessment;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-// Check palindrome using a deque. Ignore case, spaces and punctuation.
 public class Q4_DequePalindromeChecker {
 
     static boolean isPalindrome(String s) {

@@ -5,7 +5,6 @@ import java.util.Queue;
 
 public class RunningAverage {
 
-    // average of every window of size k
     public static void runningAverage(int[] nums, int k) {
         Queue<Integer> q = new LinkedList<>();
         double sum = 0;

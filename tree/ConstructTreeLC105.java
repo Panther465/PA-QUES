@@ -23,7 +23,6 @@ public class ConstructTreeLC105 {
         return build(preorder, 0, inorder.length - 1);
     }
 
-    // first element of preorder is root, its position in inorder splits left and right
     private TreeNode build(int[] preorder, int left, int right) {
         if (left > right) return null;
 

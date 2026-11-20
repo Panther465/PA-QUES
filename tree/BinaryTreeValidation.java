@@ -1,6 +1,5 @@
 package tree;
 
-// check if a binary tree is a valid BST
 public class BinaryTreeValidation {
     static class Node {
         int data;
@@ -29,7 +28,6 @@ public class BinaryTreeValidation {
         root.right.left = new Node(10);
         System.out.println("Tree 1 valid BST: " + isValidBST(root));
 
-        // 7 is in right subtree of 8 so this is wrong
         Node root2 = new Node(8);
         root2.left = new Node(4);
         root2.right = new Node(12);

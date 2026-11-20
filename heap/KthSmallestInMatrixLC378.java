@@ -6,13 +6,11 @@ public class KthSmallestInMatrixLC378 {
 
     public static int kthSmallest(int[][] matrix, int k) {
         int n = matrix.length;
-        // {value, row, col}
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         for (int r = 0; r < n; r++) {
             pq.add(new int[]{matrix[r][0], r, 0});
         }
 
-        // pop k-1 times, each time push next element from same row
         for (int i = 0; i < k - 1; i++) {
             int[] curr = pq.poll();
             int r = curr[1];

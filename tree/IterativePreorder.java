@@ -19,7 +19,6 @@ public class IterativePreorder {
         while (!st.isEmpty()) {
             Node curr = st.pop();
             System.out.print(curr.data + " ");
-            // push right first so left is processed first
             if (curr.right != null) st.push(curr.right);
             if (curr.left != null) st.push(curr.left);
         }

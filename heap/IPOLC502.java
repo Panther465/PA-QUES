@@ -18,7 +18,6 @@ public class IPOLC502 {
         PriorityQueue<Integer> maxProfit = new PriorityQueue<>(Collections.reverseOrder());
         int i = 0;
         while (k-- > 0) {
-            // add every project we can afford right now
             while (i < n && projects[i][0] <= w) {
                 maxProfit.add(projects[i][1]);
                 i++;

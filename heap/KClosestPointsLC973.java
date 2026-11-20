@@ -10,7 +10,6 @@ public class KClosestPointsLC973 {
     }
 
     public static int[][] kClosest(int[][] points, int k) {
-        // max heap on distance, remove farthest when size goes above k
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> dist(b) - dist(a));
         for (int[] p : points) {
             pq.add(p);

@@ -5,7 +5,6 @@ import java.util.PriorityQueue;
 
 public class PriorityQueueDemo {
     public static void main(String[] args) {
-        // min heap by default
         PriorityQueue<Integer> minPq = new PriorityQueue<>();
         minPq.add(40);
         minPq.add(10);
@@ -30,7 +29,6 @@ public class PriorityQueueDemo {
         }
         System.out.println();
 
-        // custom comparator, shortest word first
         PriorityQueue<String> words = new PriorityQueue<>((a, b) -> a.length() - b.length());
         words.add("banana");
         words.add("kiwi");
